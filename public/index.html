@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link href="./output.css" rel="stylesheet">
+  <title>Frontend Mentor | Expenses chart component</title>
+</head>
+<body class="h-body flex justify-center items-center text-base font-sans bg-Cream">
+  <main>
+    <div class="root max-sm:max-w-full w-auto flex flex-col justify-center items-center gap-4">
+      <div class="my-balance max-sm:w-82 w-96 flex justify-between items-center p-5 bg-Soft_red rounded-xl">
+        <div class="amount-money text-sm text-Very_pale_orange">
+          My balance
+          <h1 class="font-bold text-2xl pt-2">$921.48</h1>
+        </div>
+        <img src=".././images/logo.svg" alt="icon-logo">
+      </div>
+      <div class="spending max-sm:w-82 w-96 flex flex-col p-5 bg-Very_pale_orange rounded-xl">
+        <h2 class="font-bold text-Dark_brown text-2xl mt-2 mb-12">Spending - Last 7 days</h2>
+        <div class="h-48 text-sm text-Medium_brown flex flex-row items-end justify-between relative">
+          <span class="flex flex-col items-center">
+            <div class="absolute top-18 max-sm:-left-1.5 bg-Dark_brown text-xs text-Very_pale_orange w-11 h-8 rounded-sm items-center justify-center p1 hidden">$17.45</div>
+            <div class="bg-Soft_red hover:bg-Soft_red_fated max-sm:w-8 w-9 max-sm:h-12 h-10 rounded-sm mb-2 cursor-pointer"></div>mon</span>
+          <span class="flex flex-col items-center">
+            <div class="absolute top-8 max-sm:left-10 bg-Dark_brown text-xs text-Very_pale_orange w-11 h-8 rounded-sm  items-center justify-center p1 hidden">$34.91</div>
+            <div class="bg-Soft_red hover:bg-Soft_red_fated max-sm:w-8 w-9 max-sm:h-24 h-21 rounded-sm mb-2 cursor-pointer"></div>tue</span>
+          <span class="flex flex-col items-center">
+            <div class="absolute -top-4 max-sm:left-21 bg-Dark_brown text-xs text-Very_pale_orange w-11 h-8 rounded-sm items-center justify-center p1 hidden">$52.36</div>
+            <div class="bg-Cyan hover:bg-Cyan_fated max-sm:w-8 w-9 max-sm:h-36 h-32 rounded-sm mb-2 cursor-pointer"></div>wed</span>
+          <span class="flex flex-col items-center">
+            <div class="absolute top-12 max-sm:left-33 bg-Dark_brown text-xs text-Very_pale_orange w-11 h-8 rounded-sm items-center justify-center p1 hidden">$31.07</div>
+            <div class="bg-Soft_red hover:bg-Soft_red_fated max-sm:w-8 w-9 max-sm:h-20 h-16 rounded-sm mb-2 cursor-pointer"></div>thu</span>
+          <span class="flex flex-col items-center">
+            <div class="absolute top-16 max-sm:right-21 bg-Dark_brown text-xs text-Very_pale_orange w-11 h-8 rounded-sm items-center justify-center p1 hidden">$23.39</div>
+            <div class="bg-Soft_red hover:bg-Soft_red_fated max-sm:w-8 w-9 max-sm:h-16 h-14 rounded-sm mb-2 cursor-pointer"></div>fri</span>
+          <span class="flex flex-col items-center">
+            <div class="absolute top-4 max-sm:right-10 bg-Dark_brown text-xs text-Very_pale_orange w-11 h-8 rounded-sm items-center justify-center p1 hidden">$43.28</div>
+            <div class="bg-Soft_red hover:bg-Soft_red_fated max-sm:w-8 w-9 max-sm:h-28 h-24 rounded-sm mb-2 cursor-pointer"></div>sat</span>
+          <span class="flex flex-col items-center">
+            <div class="absolute top-16 max-sm:-right-1.5 bg-Dark_brown text-xs text-Very_pale_orange w-11 h-8 rounded-sm items-center justify-center p1 hidden">$25.48</div>
+            <div class="bg-Soft_red hover:bg-Soft_red_fated max-sm:w-8 w-9 max-sm:h-16 h-14 rounded-sm mb-2 cursor-pointer"></div>sun</span>
+        </div>
+        <hr class="border-Medium_brown my-5">
+        <div class="total-spend flex justify-between items-center">
+          <div class="text-sm text-Medium_brown">
+            Total this month
+            <h3 class="font-bold text-Dark_brown text-4xl mt-1">$478.33</h1>
+          </div>
+          <div class="text-sm text-end text-Medium_brown">
+            <h4 class="font-bold text-Dark_brown text-sm">+2.4%</h1>
+              from last month
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <script src="../src/index.js"></script>
+</body>
+</html>
